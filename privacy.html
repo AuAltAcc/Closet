@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>Privacy Policy — Closet</title><style>
+:root{
+  --navy:#06142c; --black:#07090d; --panel:rgba(12,18,28,.88);
+  --text:#f5f7fb; --silver:#c9ced8; --muted:#8c96a8;
+  --line:rgba(201,206,216,.13);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; min-width:320px; color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.72;
+  background:
+    radial-gradient(900px 560px at 0% -10%, rgba(16,54,110,.55), transparent 64%),
+    radial-gradient(700px 480px at 100% 50%, rgba(13,43,85,.24), transparent 70%),
+    linear-gradient(135deg,#071a38 0%,#090d14 45%,#05070a 100%);
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.28;
+  background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:48px 48px;
+}
+.nav{
+  position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
+  background:rgba(5,8,13,.75);backdrop-filter:blur(22px) saturate(150%);
+}
+.nav-inner{max-width:1080px;margin:auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:-.035em;font-size:20px}
+.mark{
+  width:29px;height:29px;position:relative;
+  background:linear-gradient(135deg,#f8f9fc,#b9c0cc);
+  clip-path:polygon(12% 18%,100% 0,63% 46%,72% 28%,48% 55%,39% 82%,12% 58%,23% 40%,7% 41%);
+  filter:drop-shadow(0 6px 15px rgba(255,255,255,.16));
+}
+.links{display:flex;gap:8px}
+.links a{font-size:14px;text-decoration:none;color:var(--muted);padding:8px 12px;border-radius:9px;transition:.18s}
+.links a:hover,.links a.active{color:var(--text);background:rgba(255,255,255,.06)}
+.hero{max-width:1080px;margin:auto;padding:88px 28px 52px}
+.kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(201,206,216,.16);background:rgba(255,255,255,.035);border-radius:999px;padding:7px 12px;color:#cbd3df;font-size:12px;font-weight:750;letter-spacing:.12em}
+.kicker i{width:7px;height:7px;border-radius:50%;background:#d8dce3;box-shadow:0 0 14px rgba(216,220,227,.65)}
+h1{font-size:clamp(48px,8vw,90px);line-height:.96;letter-spacing:-.07em;margin:22px 0 20px;max-width:800px}
+.lead{max-width:700px;color:var(--silver);font-size:18px;margin:0}
+.meta{margin-top:22px;color:#788396;font-size:13px}
+.shell{max-width:1080px;margin:auto;padding:0 28px 70px}
+.layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:30px;align-items:start}
+.toc{position:sticky;top:82px;border:1px solid var(--line);background:rgba(9,14,22,.74);backdrop-filter:blur(18px);padding:15px;border-radius:18px}
+.toc-label{font-size:11px;letter-spacing:.13em;color:#697587;font-weight:800;padding:4px 9px 8px}
+.toc a{display:block;text-decoration:none;color:#8f99aa;padding:8px 9px;border-radius:9px;font-size:13px;transition:.18s}
+.toc a:hover{background:rgba(255,255,255,.055);color:#fff}
+.article{border:1px solid var(--line);border-radius:26px;padding:clamp(25px,5vw,58px);background:linear-gradient(145deg,rgba(15,21,31,.9),rgba(8,11,17,.92));box-shadow:0 35px 100px rgba(0,0,0,.24)}
+.notice{border:1px solid rgba(201,206,216,.15);border-left:2px solid #d8dce3;background:linear-gradient(90deg,rgba(201,206,216,.08),rgba(255,255,255,.025));padding:16px 18px;border-radius:13px;color:#c8cfda;font-size:14px;margin-bottom:30px}
+section{padding:7px 0 30px;margin-bottom:30px;border-bottom:1px solid var(--line)}
+section:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+h2{font-size:26px;line-height:1.2;letter-spacing:-.04em;margin:0 0 13px}
+p{margin:9px 0;color:#c3cad5}
+ul{padding-left:21px;color:#c3cad5;margin:11px 0}
+li{margin:7px 0}
+.footer{max-width:1080px;margin:auto;padding:0 28px 36px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#667184;font-size:13px}
+.footer a{text-decoration:none;color:#aeb6c4}.footer a:hover{color:#fff}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.toc{display:none}.hero{padding-top:58px}}
+@media(max-width:560px){.nav-inner,.hero,.shell{padding-left:17px;padding-right:17px}.links a{padding:7px 8px;font-size:12px}.article{border-radius:20px}}
+</style></head><body>
+<header class="nav"><div class="nav-inner">
+<a class="brand" href="terms.html"><span class="mark"></span><span>Closet</span></a>
+<nav class="links"><a class="" href="terms.html">Terms</a><a class="active" href="privacy.html">Privacy</a></nav>
+</div></header>
+<main>
+<header class="hero"><span class="kicker"><i></i>PRIVACY</span><h1>Privacy Policy</h1><p class="lead">How Closet handles information when you use its Discord application.</p><div class="meta">Effective August 31, 2026 &nbsp;•&nbsp; Last updated August 31, 2026</div></header>
+<div class="shell"><div class="layout">
+<aside class="toc"><div class="toc-label">ON THIS PAGE</div><a href="#overview">1. Overview</a><a href="#information">2. Information We May Process</a><a href="#use">3. How Information Is Used</a><a href="#sharing">4. How Information Is Shared</a><a href="#retention">5. Data Retention and Deletion</a><a href="#security">6. Security</a><a href="#rights">7. Your Privacy Rights</a><a href="#changes">8. Changes to this Privacy Policy</a><a href="#contact">9. Contact</a></aside>
+<article class="article"><div class="notice">Closet is designed to process only information reasonably necessary to provide and operate its features.</div><section id="overview"><h2>1. Overview</h2><p>This Privacy Policy explains how Closet may access, collect, use, retain, and protect information when you install or use the Closet Discord application.</p><p>We aim to minimize data processing and use information only when reasonably necessary for application functionality, security, maintenance, and compliance.</p></section><section id="information"><h2>2. Information We May Process</h2><p>Depending on the features used and permissions granted, Closet may process information made available through Discord that is reasonably necessary to provide requested functionality.</p><ul><li>Discord user IDs and usernames;</li><li>Server, channel, role, or application identifiers;</li><li>Application settings and configuration data;</li><li>Command inputs or information you intentionally provide; and</li><li>Technical and diagnostic information needed to operate and troubleshoot the application.</li></ul></section><section id="use"><h2>3. How Information Is Used</h2><p>Information processed by Closet may be used to:</p><ul><li>Provide requested application features;</li><li>Maintain settings and functionality;</li><li>Prevent abuse, fraud, and security incidents;</li><li>Troubleshoot errors and improve reliability; and</li><li>Comply with applicable legal and platform requirements.</li></ul></section><section id="sharing"><h2>4. How Information Is Shared</h2><p>Closet does not sell personal information or Discord API data. Information is not shared with third parties except where reasonably necessary to operate the application, where you direct or authorize the sharing, or where disclosure is required by applicable law or valid legal process.</p></section><section id="retention"><h2>5. Data Retention and Deletion</h2><p>We retain information only for as long as reasonably necessary for the purposes described in this Privacy Policy, unless a longer period is required or permitted by applicable law.</p><p>When information is no longer needed, we take reasonable steps to delete or de-identify it. Users may request deletion through the official support or contact method associated with Closet, subject to applicable law and legitimate security or technical requirements.</p></section><section id="security"><h2>6. Security</h2><p>We use reasonable administrative and technical measures designed to protect information handled by Closet. However, no online service or method of electronic storage can be guaranteed to be completely secure.</p></section><section id="rights"><h2>7. Your Privacy Rights</h2><p>Depending on your location and applicable law, you may have rights to request access to, correction of, or deletion of certain personal information. Requests can be made through the official support or contact method associated with Closet.</p></section><section id="changes"><h2>8. Changes to this Privacy Policy</h2><p>We may update this Privacy Policy as Closet changes or as legal and operational requirements evolve. The current version will be published on this page with an updated date.</p></section><section id="contact"><h2>9. Contact</h2><p>For privacy questions or data requests, contact the Closet developer team through the official support or contact method associated with the Closet application.</p></section></article>
+</div></div></main>
+<footer class="footer"><span>© 2026 Closet. All rights reserved.</span><span><a href="terms.html">Terms of Service</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></span></footer>
+</body></html>
